@@ -1,6 +1,6 @@
 import "./ExpenseItem.css";
 
-function ExpenseDetails(props){
+const ExpenseDetails=(props)=>{
     const title=props.title;
     const amount=props.amount;
     const place=props.place;
