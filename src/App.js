@@ -8,9 +8,13 @@ const App=()=> {
     {title: 'New Phone', amount: '95000' , place: 'Noida', date: new Date(2021,5,27)},
     {title: 'Toilet Paper', amount: '150' , place: 'Pune', date: new Date(2021,8,2)}
   ]
+  const addExpsenseHandler=(expense)=>{
+    console.log("in app.js");
+    console.log(expense);
+  }
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpsenseHandler} />
       <Expenses items={expenses} />
     
     </div>
